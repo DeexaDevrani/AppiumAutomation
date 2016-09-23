@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Automation Test" verbose="1" preserve-order="true" >  
+    
+    
+     <!--  <listeners>
+		<listener class-name="com.zivame.common.scenarios.BaseTest" />
+	</listeners>
+	 <parameter name="test-name"  value="AppiumFunctional"/>  -->
+	 
+	 
+ 	 <test name="Regression Test" enabled="true" preserve-order="true" > 
+ 	   	    
+    	<classes>    
+    	  		 <parameter name="test-name"  value="AppiumFunctional"/>
+ 				 <parameter name="version"  value="4.4.4"/>  		
+    	         <class name="com.zivame.common.scenarios.HamburgerTest"/>   
+				 <class name="com.zivame.product.scenarios.ProductPageTest"/> 
+				 
+		</classes>
+		     
+     </test>
+
+  <!--  test name="SelUITests" enabled="true" >         
+       <parameter name="test-name"  value="SelFunctional"/>
+ 	   <parameter name="version"  value="4.2.2"/> 
+    	<classes>      		 
+    	    <class name="com.newshunt.news.scenarios.topicsTest" />
+    	</classes> 
+  </test>-->
+  
+</suite>
